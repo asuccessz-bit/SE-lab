@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SE연구소</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: #fff;
+      padding: 40px 48px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      max-width: 480px;
+    }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    .sub { color: #666; margin: 0 0 24px; }
+    .step { font-size: 14px; color: #0b6e4f; font-weight: bold; }
+    #time { font-size: 13px; color: #999; margin-top: 24px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hello, SE연구소</h1>
+    <p class="sub">㈜에스이 · 사내 연구관리 웹</p>
+    <p class="step">M1 배포 테스트 페이지입니다.</p>
+    <p>이 화면이 보이면 GitHub → Vercel 자동 배포가 정상입니다.</p>
+    <p id="time"></p>
+  </div>
+
+  <script>
+    // 페이지를 연 시각을 표시 — 자바스크립트가 동작하는지 확인용
+    document.getElementById("time").textContent =
+      "접속 시각: " + new Date().toLocaleString("ko-KR");
+  </script>
+</body>
+</html>
